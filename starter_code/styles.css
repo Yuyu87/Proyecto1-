@@ -1,0 +1,28 @@
+#board{
+  height: 500px;
+  width: 1000px;
+  background-color:#49B9D5;
+}
+.soplator{
+  height: 80px;
+  width: 180px;
+  background-image: url("images/soplator.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.cloud{
+  height: 90px;
+  width: 160px;
+background-image: url("images/cloud1.png");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.blown{
+  height: 10px;
+  width: 20px;
+  background-color: red; 
+}
