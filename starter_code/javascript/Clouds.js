@@ -26,4 +26,12 @@ Cloud.prototype.updateCloud = function() {
     left: this.x,
     position: "absolute"
   });
+  if (this.x==965) {
+    console.log(soplator.life);
+    soplator.life -=1;
+  }
+  else if(this.x==soplator.x && this.y==soplator.y) {
+    soplator.life -=1;
+    this.x=-50;
+  }
 };

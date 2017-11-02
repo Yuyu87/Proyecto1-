@@ -2,6 +2,7 @@ function Soplator(x, y, nombre, speed, life) {
   this.x = x;
   this.y = y;
   this.speed = speed;
+  this.points= 0;
   this.element = $("<div>").attr("class", nombre);
   this.element.css({
     top: this.y,

@@ -12,16 +12,25 @@ function Blown (x,y,nombre,speed){
   $("#board").append(this.element);
   this.speed = speed;
 
-  Blown.prototype.moveBlown = function(){
-      this.x -= this.speed;
-  };
-
-  Blown.prototype.updateBlown = function() {
-    this.moveBlown();
-    this.element.css({
-      top: this.y,
-      left: this.x,
-      position: "absolute"
-    });
-    };
 }
+Blown.prototype.moveBlown = function(){
+  this.x -= this.speed;
+};
+
+Blown.prototype.updateBlown = function() {
+  this.moveBlown();
+  this.element.css({
+    top: this.y,
+    left: this.x,
+    position: "absolute"
+  });
+};
+
+Blown.prototype.collision = function (a){
+  if ($(".blown").collision(".cloud").length>0){
+    this.element.css({display:"none"});
+    console.log("IMPACTO");
+    a.points++;
+    return true;
+    }
+};
