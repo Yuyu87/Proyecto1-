@@ -16,10 +16,10 @@
 .cloud{
   height: 90px;
   width: 160px;
-background-image: url("images/cloud1.png");
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+  background-image: url("images/cloud1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .blown{
   height: 10px;
@@ -27,9 +27,6 @@ background-repeat: no-repeat;
   background-color: red;
 }
 .score{
-  height: 100px;
-  width: 100px;
-  position: fixed;
-  background-color: green;
-  position: absolute;
+  height: 20px;
+  width: 40px;
 }

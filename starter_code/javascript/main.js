@@ -19,22 +19,12 @@ document.onkeydown = function(e) {
 };
 
 function createClouds(){
-  if(clouds.length <= 1){
-    clouds.push(new Cloud(10,10,"cloud",2));
+  if(clouds.length < 1){
+    clouds.push(new Cloud(10, Math.round(Math.random()*500),"cloud",2));
     console.log(clouds);
   }
 }
-//Nube sale de la pantalla y resta vida;nube colisiona con soplator y resta vida.
-// function cloudByeBye(){
-//   if (cloud.x==965) {
-//     console.log(soplator.life);
-//     soplator.life -=1;
-//   }
-//   else if(cloud.x==soplator.x && cloud.y==soplator.y) {
-//     soplator.life -=1;
-//     cloud.x=-50;
-//   }
-// }
+
 
 //creamos nuevos soplidos
 function createBlown(){
@@ -46,6 +36,7 @@ function deleteBlown(){ //los eliminamos cuando llegamos a x-20)
  });
 }
 
+
 setInterval(function(){
   createClouds();
   blowns.forEach( (blown) =>
@@ -56,6 +47,5 @@ setInterval(function(){
   clouds.forEach((cloud) => cloud.updateCloud());
   deleteBlown();
   soplator.updateSoplator();
-  //cloudByeBye();
-  //checkCollisions();
+  document.getElementById("score").innerHTML = soplator.points;
 }, 1000/fps);
