@@ -2,6 +2,7 @@
   height: 500px;
   width: 1000px;
   background-image: url("images/fondo.jpg");
+  background-size: 1000px 500px;
 }
 .soplator{
   height: 80px;
@@ -27,7 +28,18 @@
   background-image: url("images/soplido.png");
   background-size: cover;
 }
-.score{
-  height: 20px;
-  width: 40px;
+.Score{
+  height: 200px;
+  width: 350px;
+  position: absolute;
+  right: 23px;
+  top: 48px;
+  background-image: url("images/scoreboard2.jpg");
+  background-size: cover;
+  text-align: center;
+
+}
+
+h3{
+  font-size: 30px;
 }

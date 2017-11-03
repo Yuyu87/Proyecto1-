@@ -12,7 +12,7 @@ function Cloud(x, y, nombre, speed) {
 }
 
 Cloud.prototype.moveCloud = function() {
-  if (this.x >= 970) {
+  if (this.x >= 890) {
     this.x = 0;
     this.y = Math.round(Math.random()*400);
   } else {
