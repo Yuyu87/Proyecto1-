@@ -36,6 +36,10 @@ function deleteBlown(){ //los eliminamos cuando llegamos a x-20)
  });
 }
 
+function lifeDown(){
+  soplator.life --;
+  console.log("killing soplator");
+}
 
 setInterval(function(){
   createClouds();
@@ -44,7 +48,11 @@ setInterval(function(){
   blowns.forEach( (blown) =>
     blown.collision(soplator)
   );
-  clouds.forEach((cloud) => cloud.updateCloud());
+  clouds.forEach(
+    (cloud) =>{ cloud.updateCloud();
+      cloud.collision();
+  });
+
   deleteBlown();
   soplator.updateSoplator();
   document.getElementById("score").innerHTML = soplator.points;

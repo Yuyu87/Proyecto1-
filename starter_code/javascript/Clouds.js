@@ -36,3 +36,14 @@ Cloud.prototype.updateCloud = function() {
     this.x=-50;
   }
 };
+
+Cloud.prototype.collision = function (soplator){
+  if ($(".cloud").collision(".soplator").length>0){
+    // clouds[0].x = 0;
+    // clouds[0].y = Math.round(Math.random()*400);
+    console.log("eeeee");
+    // soplator.life--;
+    // console.log(soplator.life);
+    // return true;
+    }
+  };
