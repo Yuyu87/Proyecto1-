@@ -33,6 +33,8 @@ Blown.prototype.collision = function (soplator){
     console.log("IMPACTO");
     soplator.points++;
     console.log(soplator.points);
+    $(".blown").addClass('display');
+
     return true;
     }
 };

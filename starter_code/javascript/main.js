@@ -1,4 +1,4 @@
-var soplator = new Soplator(820,10,"soplator",30,100);
+var soplator = new Soplator(820,200,"soplator",30,100);
 var fps = 120;
 var blowns= [];
 var clouds= [];
