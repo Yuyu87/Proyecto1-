@@ -29,7 +29,7 @@ Blown.prototype.updateBlown = function() {
 Blown.prototype.collision = function (soplator){
   if ($(".blown").collision(".cloud").length>0){
     clouds[0].x = 0;
-    clouds[0].y = Math.round(Math.random()*500);
+    clouds[0].y = Math.round(Math.random()*400);
     console.log("IMPACTO");
     soplator.points++;
     console.log(soplator.points);

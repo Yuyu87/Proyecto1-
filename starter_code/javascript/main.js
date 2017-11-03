@@ -1,4 +1,4 @@
-var soplator = new Soplator(970,10,"soplator",30,100);
+var soplator = new Soplator(820,10,"soplator",30,100);
 var fps = 120;
 var blowns= [];
 var clouds= [];
@@ -20,7 +20,7 @@ document.onkeydown = function(e) {
 
 function createClouds(){
   if(clouds.length < 1){
-    clouds.push(new Cloud(10, Math.round(Math.random()*500),"cloud",2));
+    clouds.push(new Cloud(10, Math.round(Math.random()*400),"cloud",2));
     console.log(clouds);
   }
 }
@@ -32,7 +32,7 @@ function createBlown(){
 }
 function deleteBlown(){ //los eliminamos cuando llegamos a x-20)
     blowns.forEach(function(blown){
-   if(blown.x<=-20) blowns.shift();
+   if(blown.x<=-120) blowns.shift();
  });
 }
 
