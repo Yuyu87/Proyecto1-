@@ -36,10 +36,8 @@ function deleteBlown(){ //los eliminamos cuando llegamos a x-20)
  });
 }
 
-function lifeDown(){
-  soplator.life --;
-  console.log("killing soplator");
-}
+
+
 
 setInterval(function(){
   createClouds();
